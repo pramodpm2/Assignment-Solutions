@@ -1,6 +1,4 @@
 #include<stdio.h>
-#include<algorithm>
-using namespace std;
 int main() 
 {
     int i,j,sum=0,n;
@@ -8,7 +6,18 @@ int main()
     int a[n];
     for(i=0;i<n;i++)
         scanf("%d",&a[i]);
-    sort(a,a+n);
+     for(i=0;i<n;i++)
+     {
+         for(j=0;j<n;j++)
+         {
+             if(a[j]<a[j-1]
+                {
+                temp=a[j];
+                a[j]=a[j-1];
+                a[j-1]=temp;
+                }
+          }
+      }
     for(i=1;i<n;i++)
     { 
         for(j=i;j>=1;j--)
